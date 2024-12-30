@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Form, Button, Card, Modal } from "react-bootstrap";
 import "./App.css";
 import bgImage from './assets/background.png';
+import backgroundMusic from './assets/audio/background.mp3';
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -66,6 +67,7 @@ const App = () => {
           backgroundPosition: "center",
           height: "100vh",
         }}>
+          <audio src={backgroundMusic} autoPlay loop />
           <Button
             variant="danger"
             className="close-button position-absolute top-0 end-0 m-3"
@@ -78,7 +80,7 @@ const App = () => {
             <h1>Dear Methuneyy,</h1>
               <h4>
               I was soo confident that i will meet u this month..That i didn't send a letter for DEC.. 
-              Adhan i thought wat if i can't send u a letter..i can still create one for YOU nu.. <span class="text-danger fs-3">&#x2764;&#xFE0F;</span> 
+              Adhan i thought wat if i can't send u a letter..i can still create one for YOU nu.. <span className="text-danger fs-3">&#x2764;&#xFE0F;</span> 
               </h4>
               <br/>
               <h4>         
@@ -103,17 +105,17 @@ const App = () => {
               This year is going to end. Thanks for being  here for me.
               </h3>
               <h3>
-              This year is going to end. But my love for you wont.. <span class="text-danger fs-3">&#x2764;&#xFE0F;</span> 
+              This year is going to end. But my love for you wont.. <span className="text-danger fs-3">&#x2764;&#xFE0F;</span> 
               </h3>
               <br/>
               <h3>
               I will choose you even on the days we don't understand each other.. 
               </h3>
               <h3>
-              I Love you.. <span class="text-danger fs-3">&#x2764;&#xFE0F;</span> 
+              I Love you.. <span className="text-danger fs-3">&#x2764;&#xFE0F;</span> 
               </h3>
               <h3>
-              Happy New Year 2025.. <span class="text-danger fs-3">&#x2764;&#xFE0F;</span> <span class="text-danger fs-3">&#x2764;&#xFE0F;</span> 
+              Happy New Year 2025.. <span className="text-danger fs-3">&#x2764;&#xFE0F;</span> <span className="text-danger fs-3">&#x2764;&#xFE0F;</span> 
               </h3>
             </Card.Body>
           </Card>
