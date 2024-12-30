@@ -59,12 +59,11 @@ const App = () => {
           </Modal>
         </Container>
       ) : (
-        <div className="message-page text-white d-flex flex-column justify-content-center align-items-center vh-100"
+        <div className="message-page text-white d-flex flex-column"
         style={{
           backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "100vh",
         }}>
           <Button
             variant="danger"
