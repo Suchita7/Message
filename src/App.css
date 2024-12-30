@@ -4,28 +4,15 @@
   width: 100%; 
 } */
 
-.message-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  height: 100vh;
-  width: 100%;
-}
-
 .close-button {
   font-size: 1.5rem;
 }
 
 /* Added fixed height and scrolling for the card */
 .message-card {
-  width: 50%; /* Default desktop width */
-  max-width: 600px;
-  height: 80vh;
-  overflow-y: auto;
-  background: rgba(255, 255, 255, 0.9);
-  -webkit-overflow-scrolling: touch;
+  height: 80vh; /* Fixed height */
+  overflow-y: auto; /* Enable vertical scrollbar */
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
 }
 
 .message-card::-webkit-scrollbar {
@@ -45,15 +32,4 @@
   font-family: 'Caveat'; /* Use your chosen font here */
   font-size: 1.2rem; /* Optional: Adjust the font size */
   color: #512727; /* Optional: Change text color for better readability */
-}
-
-@media (max-width: 768px) {
-  .message-card {
-    width: 90%; /* Adjust for smaller screens */
-    height: auto; /* Allow flexible height */
-  }
-
-  .funky-text {
-    font-size: 1rem; /* Adjust font size */
-  }
 }
